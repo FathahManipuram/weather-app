@@ -15,7 +15,6 @@ async function checkWeather(city) {
     alert("City not found");
   }
 
-  console.log(data.weather[0].main);
   if (data.weather[0].main == "Clouds") {
     image.src = "./images/clouds.png";
   } else if (data.weather[0].main == "Clear") {
